@@ -22,21 +22,21 @@
           var sel = document.querySelector('body')
         </script>
         <input type="button" value="DAY" onclick="
-          document.querySelector('body').style.backgroundColor='white'
-          document.querySelector('body').style.color='black'
+          sel.style.backgroundColor='white'
+          sel.style.color='black'
           ">
         <input type="button" value="NIGHT" onclick="
-          document.querySelector('body').style.backgroundColor='black'
-          document.querySelector('body').style.color='white'
+          sel.style.backgroundColor='black'
+          sel.style.color='white'
         ">
         <input id="togglebutton" type="button" value="DAY" onclick="
           if(document.querySelector('#togglebutton').value === 'DAY'){
-            document.querySelector('body').style.backgroundColor='black'
-            document.querySelector('body').style.color='white'
+            sel.style.backgroundColor='black'
+            sel.style.color='white'
             document.querySelector('#togglebutton').value = 'NIGHT'
           } else {
-            document.querySelector('body').style.backgroundColor='white'
-            document.querySelector('body').style.color='black'
+            sel.style.backgroundColor='white'
+            sel.style.color='black'
             document.querySelector('#togglebutton').value = 'DAY'
           }
         ">
